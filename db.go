@@ -46,7 +46,7 @@ func (d *DBEngine) initTables() error {
 	db.AutoMigrate(&User{})
 
 	var user = User{}
-	user.UUID = newUUID()
+	//user.UUID = newUUID()
 	user.Name = "admin"
 	user.LoginID = "admin"
 	user.Password = "1:admin123"
